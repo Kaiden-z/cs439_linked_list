@@ -1,14 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * Doubly linked node struct
+*/
 typedef struct node {
     int data;
     struct node *next;
     struct node *prev;
 } node_t;
 
-// Reference to first element of linked list
-node_t* header = NULL;
+node_t* header = NULL; /*Reference to first element of linked list*/ 
 
 /**
  * Insert new node into the list with data sorted in order of least to greatest
